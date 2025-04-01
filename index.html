@@ -17,7 +17,7 @@ $$ | /$$/   ______   _____  ____  $$/   _______   ______   _$$ |_  _$$ |_   $$/
 $$ |/$$/   /      \ /     \/    \ /  | /       | /      \ / $$   |/ $$   |  /  |          
 $$  $$<    $$$$$$  |$$$$$$ $$$$  |$$ |/$$$$$$$/ /$$$$$$  |$$$$$$/ $$$$$$/   $$ |          
 $$$$$  \   /    $$ |$$ | $$ | $$ |$$ |$$      \ $$    $$ |  $$ | __ $$ | __ $$ |          
-$$ |$$  \ /$$$$$$$ |$$ | $$ | $$ |$$ | $$$$$$  |$$$$$$$$/   $$ |/  |$$ |/  |$$ |          
+$$ | $$  \ /$$$$$$$ |$$ | $$ | $$ |$$ | $$$$$$  |$$$$$$$$/   $$ |/  |$$ |/  |$$ |          
 $$ | $$  |$$    $$ |$$ | $$ | $$ |$$ |/     $$/ $$       |  $$  $$/ $$  $$/ $$ |          
 $$/   $$/  $$$$$$$/ $$/  $$/  $$/ $$/ $$$$$$$/   $$$$$$$/    $$$$/   $$$$/  $$/           
                                                                                           
@@ -99,6 +99,12 @@ $$/   $$/  $$$$$$$/ $$/  $$/  $$/ $$/ $$$$$$$/   $$$$$$$/    $$$$/   $$$$/  $$/
             </a>
           </li>
 
+          <li class="certifications" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="600">
+            <a href="#certifications" aria-label="certifications menu button">
+              &#60;/Certifications&#62;
+            </a>
+          </li>
+
           <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
             <a href="#projects" aria-label="projects menu button">
               &#60;/Projects&#62;
@@ -141,6 +147,11 @@ $$/   $$/  $$$$$$$/ $$/  $$/  $$/ $$/ $$$$$$$/   $$$$$$$/    $$$$/   $$$$/  $$/
             &#60;/Skills&#62;
           </a>
         </li>
+        <li id="certifications-mobile-tab" class="mobile-navbar-tabs-li certifications" onclick="hidemenubyli()">
+          <a href="#certifications" tabindex="0" aria-label="certifications menu button">
+            &#60;/Certifications&#62;
+          </a>
+        </li>
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
           <a href="#projects" tabindex="0" aria-label="projects menu button">
             &#60;/Projects&#62;
@@ -174,26 +185,28 @@ $$/   $$/  $$$$$$$/ $$/  $$/  $$/ $$/ $$$$$$$/   $$$$$$$/    $$$$/   $$$$/  $$/
           <p class="jello">m</p>
         </article>
         <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">J</p>
-          <p class="jello">a</p>
-          <p class="jello">y</p>
-          <p class="jello">a</p>
-          <p class="jello">k</p>
-          <p class="jello">a</p>
-          <p class="jello">n</p>
-          <p class="jello">t</p>
-          <p class="jello">h</p>
-          &nbsp;
-          <p class="jello">K</p>
-          <p class="jello">a</p>
-          <p class="jello">m</p>
-          <p class="jello">i</p>
-          <p class="jello">s</p>
-          <p class="jello">e</p>
-          <p class="jello">t</p>
-          <p class="jello">t</p>
-          <p class="jello">i</p>
-
+          <div class="firstname">
+            <p class="jello">J</p>
+            <p class="jello">a</p>
+            <p class="jello">y</p>
+            <p class="jello">a</p>
+            <p class="jello">k</p>
+            <p class="jello">a</p>
+            <p class="jello">n</p>
+            <p class="jello">t</p>
+            <p class="jello">h</p>
+          </div>
+          <div class="lastname">
+            <p class="jello">K</p>
+            <p class="jello">a</p>
+            <p class="jello">m</p>
+            <p class="jello">i</p>
+            <p class="jello">s</p>
+            <p class="jello">e</p>
+            <p class="jello">t</p>
+            <p class="jello">t</p>
+            <p class="jello">i</p>
+          </div>
         </article>
 
         <article id="work" data-aos="fade-up" data-aos-delay="400">
@@ -407,6 +420,58 @@ $$/   $$/  $$$$$$$/ $$/  $$/  $$/ $$/ $$$$$$$/   $$$$$$$/    $$$$/   $$$$/  $$/
     </section>
     <!-- skills section ends -->
 
+    <!-- Certifications Section Start -->
+    <section class="certifications-section-container" id="certifications">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My certifications starts from here">
+            &#60;/Certifications&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        
+        <div class="certifications-scroll">
+            <div class="certifications-wrapper">
+                <!-- Original Certification Cards -->
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-image">
+                        <img src="src/pdf/AI.png" alt="Google AI Essentials Certification">
+                    </div>
+                    <div class="certification-info">
+                        <h3>Google AI Essentials</h3>
+                        <p>Coursera</p>
+                        <div class="certification-date">August 2024</div>
+                        <button class="verify-btn" onclick="window.open('./src/pdf/Coursera MINEOPY7Y7RH.pdf', '_blank')">
+                            <div class="sign">
+                                <img src="./src/png/eye-2.png" alt="View" style="width: 17px; filter: brightness(0) invert(1);">
+                            </div>
+                            <div class="text">View</div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-image">
+                        <img src="src/pdf/Os.png" alt="Introduction to OS Certification">
+                    </div>
+                    <div class="certification-info">
+                        <h3>OS Certification</h3>
+                        <p>Coursera</p>
+                        <div class="certification-date">January 2025</div>
+                        <button class="verify-btn" onclick="window.open('./src/pdf/Coursera BJZOORH250NF.pdf', '_blank')">
+                            <div class="sign">
+                                <img src="./src/png/eye-2.png" alt="View" style="width: 17px; filter: brightness(0) invert(1);">
+                            </div>
+                            <div class="text">View</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Certifications Section End -->
+
     <section class="projects-section-container" id="projects">
       <div class="projects-section-div">
         <div class="section-heading" data-aos="fade-up">
@@ -460,6 +525,7 @@ $$/   $$/  $$$$$$$/ $$/  $$/  $$/ $$/ $$$$$$$/   $$$$$$$/    $$$$/   $$$$/  $$/
         </div>
       </div>
     </section>
+    <!-- projects section ends -->
   </main>
   <!-- main ends here -->
 
