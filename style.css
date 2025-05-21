@@ -1274,18 +1274,19 @@ footer {
 }
 
 .github-redirect {
-    width: 50px
+    text-decoration: none;    
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .github-redirect img {
     width: 45px;
-    height: auto;
-    transition: .3s;
-    filter: brightness(2)
-}
-
-.github-redirect:hover img {
-    filter: brightness(4)
+    height: 45px;
+    transition: all .3s;
+    filter: brightness(2);
 }
 
 .cta {
@@ -2151,7 +2152,7 @@ footer {
 }
 
 .verify-btn {
-    margin-top: 15px;
+    margin-top: 0;
     display: flex;
     justify-content: flex-start;
     width: 45px;
@@ -2248,4 +2249,49 @@ footer {
     #name {
         font-size: 4.5rem;
     }
+}
+
+.project-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center; /* Ensure items are vertically centered */
+  justify-content: flex-start;
+  gap: 20px; /* Space between buttons */
+}
+
+.project-view-btn {
+  background: linear-gradient(82.3deg, #6e5494 10.8%, #a491b2 94.3%); /* Purple gradient background */
+  border: none;
+  border-radius: 50%; /* Make it circular */
+  width: 45px; /* Set a fixed width to match GitHub icon roughly */
+  height: 45px; /* Set a fixed height to match GitHub icon roughly */
+  display: flex;
+  align-items: center; /* Vertically center content inside button */
+  justify-content: center; /* Horizontally center content inside button */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0; /* Remove padding */
+}
+
+.project-view-btn:hover {
+  background: linear-gradient(82.3deg, #7e64a4 10.8%, #b4a1c2 94.3%); /* Slightly lighter purple gradient on hover */
+  transform: translateY(-2px);
+}
+
+.project-view-btn .sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Make sign take full width to center icon */
+  height: 100%; /* Make sign take full height to center icon */
+}
+
+.project-view-btn .sign img {
+  width: 60%; /* Adjust icon size within the button */
+  height: auto;
+  filter: brightness(0) invert(1); /* Keep icon white */
+}
+
+.project-view-btn .text {
+  display: none; /* Hide text for icon-only button */
 }
